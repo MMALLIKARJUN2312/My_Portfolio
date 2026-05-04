@@ -1,11 +1,3 @@
-import './App.css'
-
-function App() {
-    return (
-      <div>
-        <h1>This is the portfolio</h1>
-      </div>
-    )
+export default function App() {
+  return <h1 className="text-3xl font-bold">Portfolio</h1>;
 }
-
-export default App
