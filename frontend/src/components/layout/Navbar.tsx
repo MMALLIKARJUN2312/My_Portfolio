@@ -2,7 +2,11 @@ import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 
 export default function Navbar() {
-    const [theme, setTheme] = useContext(ThemeContext);
+    const context = useContext(ThemeContext);
+
+    if (!context) return null;
+
+    const {theme, setTheme} = context;
 
     return (
         <nav className="flex items-center justify-between py-6 border-b border-white/10">
