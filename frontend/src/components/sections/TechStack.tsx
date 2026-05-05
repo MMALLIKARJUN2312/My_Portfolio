@@ -5,7 +5,7 @@ export default function TechStack () {
         <div className="flex flex-wrap gap-4 py-6 border-y border-white/10">
             {
                 tech.map((eachTech) => (
-                    <span key = {eachTech} className="px-4 py-2 bg-white/5 rounded-lg text-sm">{eachTech}</span>
+                    <span key = {eachTech} className="px-4 py-2 border border-white/10 rounded-lg text-sm hover:bg-purple-500/10 transition">{eachTech}</span>
                 ))
             }
         </div>
